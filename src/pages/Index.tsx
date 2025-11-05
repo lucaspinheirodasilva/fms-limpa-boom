@@ -7,10 +7,8 @@ import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
-
 const Index = () => {
-  return (
-    <main className="min-h-screen">
+  return <main className="min-h-screen">
       <Hero />
       <Segments />
       <Benefits />
@@ -19,9 +17,7 @@ const Index = () => {
       <Testimonials />
       <FAQ />
       <CTA />
-      <Footer />
-    </main>
-  );
+      
+    </main>;
 };
-
 export default Index;
