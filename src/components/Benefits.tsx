@@ -1,69 +1,82 @@
-import { Shield, Sparkles, Clock, Award, Leaf, Users } from "lucide-react";
+import { Shield, Clock, Award, Droplets, Leaf, BadgeCheck, Wrench, Zap } from "lucide-react";
 
 const benefits = [
   {
-    icon: Shield,
-    title: "Proteção e Durabilidade",
-    description: "Nosso processo de limpeza profunda remove sujeira e bactérias, prolongando a vida útil do seu carpete e protegendo seu investimento."
+    icon: Wrench,
+    title: "Equipamentos Industriais de Última Geração",
+    description: "Extratoras importadas Kärcher e Windsor com alta pressão e temperatura controlada para remoção profunda de sujeira"
   },
   {
-    icon: Sparkles,
-    title: "Limpeza Profunda",
-    description: "Eliminamos manchas difíceis, odores e ácaros com equipamentos industriais de última geração e produtos especializados."
+    icon: Zap,
+    title: "Mínimo Downtime - Secagem Rápida",
+    description: "Tecnologia de extração que permite secagem completa em 2-4 horas, sem paralisar suas operações"
   },
   {
-    icon: Clock,
-    title: "Rápida Secagem",
-    description: "Tecnologia avançada de extração garante secagem rápida, permitindo que você retome suas atividades em poucas horas."
+    icon: BadgeCheck,
+    title: "Certificações e Compliance",
+    description: "Produtos e processos certificados, atendendo normas ANVISA, ISO e requisitos corporativos de qualidade"
   },
   {
-    icon: Award,
-    title: "Qualidade Garantida",
-    description: "Mais de 15 anos de experiência no mercado de higienização profissional. Sua satisfação é nossa prioridade."
+    icon: Droplets,
+    title: "Higienização Profunda e Sanitização",
+    description: "Eliminação de 99.9% de ácaros, bactérias e fungos, garantindo ambiente mais saudável para colaboradores e clientes"
   },
   {
     icon: Leaf,
-    title: "Produtos Ecológicos",
-    description: "Utilizamos produtos biodegradáveis e seguros para sua equipe, clientes e meio ambiente. Higienização responsável."
+    title: "Produtos Ecológicos Certificados",
+    description: "Utilizamos produtos biodegradáveis, não tóxicos e seguros para pessoas, animais e meio ambiente"
   },
   {
-    icon: Users,
-    title: "Equipe Especializada",
-    description: "Técnicos treinados e certificados, preparados para atender pequenas e grandes empresas com o mesmo padrão de excelência."
+    icon: Shield,
+    title: "Garantia Total e Pós-Venda",
+    description: "Compromisso com o resultado: se não ficar satisfeito, voltamos gratuitamente até atingir a excelência esperada"
+  },
+  {
+    icon: Award,
+    title: "Experiência Corporativa",
+    description: "15+ anos atendendo grandes empresas, indústrias e condomínios com padrão de excelência e pontualidade"
+  },
+  {
+    icon: Clock,
+    title: "Flexibilidade de Horários",
+    description: "Atendimento 24/7 com agendamento em horários comerciais, noturnos ou finais de semana conforme sua necessidade"
   }
 ];
 
 const Benefits = () => {
   return (
-    <section id="beneficios" className="py-20 bg-gradient-to-b from-background to-accent">
+    <section id="beneficios" className="py-20 bg-gradient-to-b from-background to-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
             Por Que Escolher a FMS Higienizações?
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Somos especialistas em limpeza de carpetes comerciais e corporativos, 
-            oferecendo soluções completas para manter seu ambiente profissional e saudável.
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            Não somos apenas mais uma empresa de limpeza. Somos especialistas em higienização corporativa 
+            com tecnologia industrial, processos certificados e compromisso total com resultados
           </p>
         </div>
-        
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {benefits.map((benefit, index) => (
-            <div 
-              key={index}
-              className="bg-card rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
-            >
-              <div className="bg-primary/10 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
-                <benefit.icon className="h-8 w-8 text-primary" />
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {benefits.map((benefit, index) => {
+            const Icon = benefit.icon;
+            return (
+              <div
+                key={index}
+                className="group bg-card p-6 rounded-xl border border-border hover:border-accent/50 hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+              >
+                <div className="mb-4 inline-flex items-center justify-center w-14 h-14 rounded-xl bg-accent/10 text-accent group-hover:bg-accent group-hover:text-accent-foreground transition-all duration-300">
+                  <Icon className="h-7 w-7" />
+                </div>
+                <h3 className="text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors">
+                  {benefit.title}
+                </h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  {benefit.description}
+                </p>
               </div>
-              <h3 className="text-2xl font-bold text-card-foreground mb-3">
-                {benefit.title}
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                {benefit.description}
-              </p>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

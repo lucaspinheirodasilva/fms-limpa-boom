@@ -52,9 +52,9 @@ const CTA = () => {
 
             <Button 
               size="lg"
-              variant="hero"
+              variant="accent"
               onClick={() => window.open(whatsappLink, '_blank')}
-              className="text-xl px-10 py-7 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
+              className="text-xl px-10 py-7 font-bold shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
             >
               <Phone className="mr-3 h-6 w-6" />
               Falar com Especialista Agora

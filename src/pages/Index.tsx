@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero";
+import Segments from "@/components/Segments";
 import Benefits from "@/components/Benefits";
 import Process from "@/components/Process";
 import ServiceAreas from "@/components/ServiceAreas";
@@ -11,6 +12,7 @@ const Index = () => {
   return (
     <main className="min-h-screen">
       <Hero />
+      <Segments />
       <Benefits />
       <Process />
       <ServiceAreas />
