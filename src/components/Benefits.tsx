@@ -45,33 +45,32 @@ const benefits = [
 
 const Benefits = () => {
   return (
-    <section id="beneficios" className="py-20 bg-gradient-to-b from-background to-muted/30">
+    <section id="beneficios" className="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-background to-muted/30">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+        <div className="text-center mb-8 sm:mb-12 md:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-3 sm:mb-4">
             Por Que Escolher a FMS Higienizações?
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Não somos apenas mais uma empresa de limpeza. Somos especialistas em higienização corporativa 
-            com tecnologia industrial, processos certificados e compromisso total com resultados
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto px-2">
+            Especialistas em higienização corporativa com tecnologia industrial e compromisso total com resultados
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
           {benefits.map((benefit, index) => {
             const Icon = benefit.icon;
             return (
               <div
                 key={index}
-                className="group bg-card p-6 rounded-xl border border-border hover:border-accent/50 hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                className="group bg-card p-4 sm:p-5 md:p-6 rounded-xl border border-border hover:border-accent/50 hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
               >
-                <div className="mb-4 inline-flex items-center justify-center w-14 h-14 rounded-xl bg-accent/10 text-accent group-hover:bg-accent group-hover:text-accent-foreground transition-all duration-300">
-                  <Icon className="h-7 w-7" />
+                <div className="mb-3 sm:mb-4 inline-flex items-center justify-center w-11 h-11 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-xl bg-accent/10 text-accent group-hover:bg-accent group-hover:text-accent-foreground transition-all duration-300">
+                  <Icon className="h-5 w-5 sm:h-6 sm:w-6 md:h-7 md:w-7" />
                 </div>
-                <h3 className="text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors">
+                <h3 className="text-base sm:text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-tight">
                   {benefit.title}
                 </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
+                <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
                   {benefit.description}
                 </p>
               </div>
