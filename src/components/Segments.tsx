@@ -1,23 +1,13 @@
 import { Button } from "@/components/ui/button";
-import { Warehouse, Building2, ShoppingBag, Hotel, HeartPulse, Building } from "lucide-react";
-import warehouseImg from "@/assets/segment-warehouse.jpg";
+import { Building2, Hotel, HeartPulse, Home, Dumbbell, Users } from "lucide-react";
 import officeImg from "@/assets/segment-office.jpg";
-import retailImg from "@/assets/segment-retail.jpg";
 import hotelImg from "@/assets/segment-hotel.jpg";
 import clinicImg from "@/assets/segment-clinic.jpg";
 import condominiumImg from "@/assets/segment-condominium.jpg";
+import gymImg from "@/assets/segment-gym.jpg";
+import churchImg from "@/assets/segment-church.jpg";
 
 const segments = [
-  {
-    icon: Warehouse,
-    title: "Galpões e Centros Logísticos",
-    image: warehouseImg,
-    benefits: [
-      "Limpeza de grandes áreas com equipamento industrial",
-      "Mínimo downtime operacional",
-      "Remoção de sujeira pesada e oleosidade"
-    ]
-  },
   {
     icon: Building2,
     title: "Escritórios Corporativos",
@@ -29,18 +19,8 @@ const segments = [
     ]
   },
   {
-    icon: ShoppingBag,
-    title: "Lojas e Shopping Centers",
-    image: retailImg,
-    benefits: [
-      "Preservação da imagem comercial",
-      "Limpeza sem interrupção das vendas",
-      "Remoção de manchas de alto tráfego"
-    ]
-  },
-  {
     icon: Hotel,
-    title: "Hotéis, Pousadas e Resorts",
+    title: "Hotéis e Pousadas",
     image: hotelImg,
     benefits: [
       "Padrão hospitality de limpeza",
@@ -50,22 +30,42 @@ const segments = [
   },
   {
     icon: HeartPulse,
-    title: "Clínicas, Hospitais e Laboratórios",
+    title: "Clínicas e Consultórios",
     image: clinicImg,
     benefits: [
-      "Higienização com produtos certificados",
-      "Conformidade ANVISA e normas sanitárias",
-      "Eliminação de alérgenos e bactérias"
+      "Produtos hipoalergênicos",
+      "Ambiente livre de ácaros e alérgenos",
+      "Conformidade com normas sanitárias"
     ]
   },
   {
-    icon: Building,
-    title: "Condomínios Empresariais",
+    icon: Home,
+    title: "Condomínios Residenciais",
     image: condominiumImg,
     benefits: [
-      "Manutenção de áreas comuns",
-      "Valorização do patrimônio",
+      "Halls de entrada e corredores",
+      "Salões de festas e áreas comuns",
       "Planos de manutenção periódica"
+    ]
+  },
+  {
+    icon: Dumbbell,
+    title: "Academias e Estúdios",
+    image: gymImg,
+    benefits: [
+      "Áreas de alongamento e yoga",
+      "Remoção de odores e suor",
+      "Higienização profunda"
+    ]
+  },
+  {
+    icon: Users,
+    title: "Igrejas e Espaços de Eventos",
+    image: churchImg,
+    benefits: [
+      "Auditórios e salões acarpetados",
+      "Grandes áreas com alto tráfego",
+      "Limpeza pós-eventos"
     ]
   }
 ];
