@@ -20,8 +20,8 @@ const Hero = () => {
           <div className="mb-4 sm:mb-6 inline-flex items-center gap-2 sm:gap-3 rounded-full bg-accent/20 backdrop-blur-sm border border-accent/30 px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm font-semibold text-white shadow-lg">
             <Award className="h-4 w-4 sm:h-5 sm:w-5 text-accent flex-shrink-0" />
             <span>
-              <span className="sm:hidden">15+ Anos | 500+ Empresas</span>
-              <span className="hidden sm:inline">15+ Anos de Experiência | 500+ Empresas Atendidas | Resultados Garantidos</span>
+              <span className="sm:hidden">25 Anos | 1.000+ Clientes</span>
+              <span className="hidden sm:inline">25 Anos de Mercado | 1.000+ Clientes Satisfeitos | Resultados Garantidos</span>
             </span>
           </div>
           
@@ -35,17 +35,17 @@ const Hero = () => {
           <div className="mb-4 sm:mb-6 grid grid-cols-2 sm:flex sm:flex-wrap gap-2 sm:gap-3 text-sm sm:text-lg md:text-xl font-semibold text-white/95">
             <span className="flex items-center gap-1.5 sm:gap-2">
               <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-accent flex-shrink-0" />
-              Galpões
-            </span>
-            <span className="hidden sm:inline text-white/40">•</span>
-            <span className="flex items-center gap-1.5 sm:gap-2">
-              <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-accent flex-shrink-0" />
               Escritórios
             </span>
             <span className="hidden sm:inline text-white/40">•</span>
             <span className="flex items-center gap-1.5 sm:gap-2">
               <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-accent flex-shrink-0" />
-              Indústrias
+              Hotéis
+            </span>
+            <span className="hidden sm:inline text-white/40">•</span>
+            <span className="flex items-center gap-1.5 sm:gap-2">
+              <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-accent flex-shrink-0" />
+              Clínicas
             </span>
             <span className="hidden sm:inline text-white/40">•</span>
             <span className="flex items-center gap-1.5 sm:gap-2">
@@ -56,8 +56,8 @@ const Hero = () => {
           
           {/* Subheadline com Proof Points */}
           <p className="mb-6 sm:mb-8 text-sm sm:text-base md:text-lg lg:text-xl text-white/95 leading-relaxed font-medium">
-            <span className="hidden sm:inline">Tecnologia Industrial de Extração a Vapor | Secagem em 2-4h | Equipamentos Importados Kärcher & Windsor | </span>
-            <span className="sm:hidden">Tecnologia Industrial | Secagem em 2-4h | </span>
+            <span className="hidden sm:inline">Lavagem Profissional de Carpetes | Secagem Rápida | Produtos de Qualidade | </span>
+            <span className="sm:hidden">Lavagem Profissional | Secagem Rápida | </span>
             Atendimento Grande Florianópolis, Balneário Camboriú e Itapema
           </p>
           
@@ -87,15 +87,15 @@ const Hero = () => {
           {/* Estatísticas Visuais */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 pt-6 sm:pt-8 border-t border-white/20">
             <div className="text-center">
-              <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-accent mb-1 sm:mb-2">+15</div>
+              <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-accent mb-1 sm:mb-2">+25</div>
               <div className="text-xs sm:text-sm md:text-base text-white/90 font-medium">Anos de Experiência</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-accent mb-1 sm:mb-2">+500</div>
-              <div className="text-xs sm:text-sm md:text-base text-white/90 font-medium">Empresas Atendidas</div>
+              <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-accent mb-1 sm:mb-2">+1.000</div>
+              <div className="text-xs sm:text-sm md:text-base text-white/90 font-medium">Clientes Atendidos</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-accent mb-1 sm:mb-2">+50k</div>
+              <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-accent mb-1 sm:mb-2">+1,5M</div>
               <div className="text-xs sm:text-sm md:text-base text-white/90 font-medium">m² Higienizados</div>
             </div>
             <div className="text-center">
@@ -108,11 +108,11 @@ const Hero = () => {
           <div className="mt-6 sm:mt-10 hidden sm:flex flex-wrap gap-3 sm:gap-6 text-white">
             <div className="flex items-center gap-2 sm:gap-3 bg-white/10 backdrop-blur-sm rounded-full px-4 sm:px-5 py-2 sm:py-3 border border-white/20">
               <Shield className="h-5 w-5 sm:h-6 sm:w-6 text-accent" />
-              <span className="font-semibold text-sm sm:text-base">Equipamentos Industriais</span>
+              <span className="font-semibold text-sm sm:text-base">Equipamentos Profissionais</span>
             </div>
             <div className="flex items-center gap-2 sm:gap-3 bg-white/10 backdrop-blur-sm rounded-full px-4 sm:px-5 py-2 sm:py-3 border border-white/20">
               <Clock className="h-5 w-5 sm:h-6 sm:w-6 text-accent" />
-              <span className="font-semibold text-sm sm:text-base">Secagem Rápida 2-4h</span>
+              <span className="font-semibold text-sm sm:text-base">Secagem Rápida</span>
             </div>
             <div className="flex items-center gap-2 sm:gap-3 bg-white/10 backdrop-blur-sm rounded-full px-4 sm:px-5 py-2 sm:py-3 border border-white/20">
               <CheckCircle2 className="h-5 w-5 sm:h-6 sm:w-6 text-accent" />

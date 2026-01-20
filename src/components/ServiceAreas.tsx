@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { MapPin, Building2, Factory, Store, Hotel, HeartPulse, Home } from "lucide-react";
+import { MapPin, Building2, Hotel, HeartPulse, Home, Dumbbell, Users } from "lucide-react";
 
 const cities = [
   {
@@ -30,19 +30,9 @@ const cities = [
 
 const serviceTypes = [
   {
-    icon: Factory,
-    title: "Galpões e Indústrias",
-    description: "Limpeza pesada com equipamento industrial de alta performance para grandes áreas"
-  },
-  {
     icon: Building2,
     title: "Escritórios e Corporações",
     description: "Manutenção preventiva programada fora do horário comercial"
-  },
-  {
-    icon: Store,
-    title: "Lojas e Comércio",
-    description: "Limpeza rápida e eficiente que não interrompe suas vendas"
   },
   {
     icon: Hotel,
@@ -51,13 +41,23 @@ const serviceTypes = [
   },
   {
     icon: HeartPulse,
-    title: "Clínicas e Hospitais",
-    description: "Higienização hospitalar certificada conforme normas ANVISA"
+    title: "Clínicas e Consultórios",
+    description: "Produtos hipoalergênicos e ambiente livre de ácaros"
   },
   {
     icon: Home,
-    title: "Condomínios",
-    description: "Limpeza de áreas comuns com planos de manutenção"
+    title: "Condomínios Residenciais",
+    description: "Halls, corredores e salões de festas com planos de manutenção"
+  },
+  {
+    icon: Dumbbell,
+    title: "Academias e Estúdios",
+    description: "Áreas de alongamento e yoga com higienização profunda"
+  },
+  {
+    icon: Users,
+    title: "Igrejas e Eventos",
+    description: "Auditórios e salões acarpetados com limpeza pós-eventos"
   }
 ];
 

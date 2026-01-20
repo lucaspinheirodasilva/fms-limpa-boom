@@ -3,8 +3,8 @@ import { Shield, Clock, Award, Droplets, Leaf, BadgeCheck, Wrench, Zap } from "l
 const benefits = [
   {
     icon: Wrench,
-    title: "Equipamentos Industriais de Última Geração",
-    description: "Extratoras importadas Kärcher e Windsor com alta pressão e temperatura controlada para remoção profunda de sujeira"
+    title: "Equipamentos Profissionais de Qualidade",
+    description: "Equipamentos profissionais de lavagem com produtos de qualidade para remoção profunda de sujeira e manchas"
   },
   {
     icon: Zap,
@@ -34,7 +34,7 @@ const benefits = [
   {
     icon: Award,
     title: "Experiência Corporativa",
-    description: "15+ anos atendendo grandes empresas, indústrias e condomínios com padrão de excelência e pontualidade"
+    description: "25 anos atendendo empresas, hotéis e clínicas com padrão de excelência e pontualidade"
   },
   {
     icon: Clock,
