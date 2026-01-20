@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Phone, CheckCircle2, Award, Clock, Shield } from "lucide-react";
 import heroImage from "@/assets/hero-carpet-cleaning.jpg";
 const Hero = () => {
-  const whatsappLink = "http://wa.me/5548998343320";
+  const whatsappLink = "https://fmshigienizacao.com.br/whatsapp";
   return <section className="relative min-h-[90vh] sm:min-h-[95vh] flex items-center overflow-hidden pt-16 sm:pt-20">
       <div className="absolute inset-0 bg-cover bg-center" style={{
       backgroundImage: `url(${heroImage})`
@@ -31,20 +31,22 @@ const Hero = () => {
           <div className="mb-4 sm:mb-6 grid grid-cols-2 sm:flex sm:flex-wrap gap-2 sm:gap-3 text-sm sm:text-lg md:text-xl font-semibold text-white/95">
             <span className="flex items-center gap-1.5 sm:gap-2">
               <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-accent flex-shrink-0" />
-              Galpões
+              Escritórios
             </span>
             <span className="hidden sm:inline text-white/40">•</span>
             <span className="flex items-center gap-1.5 sm:gap-2">
               <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-accent flex-shrink-0" />
-              Escritórios
+              Hotéis
             </span>
             <span className="hidden sm:inline text-white/40">•</span>
-            <span className="flex items-center gap-1.5 sm:gap-2">Call centers<CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-accent flex-shrink-0" />
-              Indústrias
+            <span className="flex items-center gap-1.5 sm:gap-2">
+              <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-accent flex-shrink-0" />
+              Call Centers
             </span>
             <span className="hidden sm:inline text-white/40">•</span>
-            <span className="flex items-center gap-1.5 sm:gap-2">Cinemas<CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-accent flex-shrink-0" />
-              Condomínios
+            <span className="flex items-center gap-1.5 sm:gap-2">
+              <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-accent flex-shrink-0" />
+              Cinemas
             </span>
           </div>
           

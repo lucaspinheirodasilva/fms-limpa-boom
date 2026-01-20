@@ -4,7 +4,7 @@ import { Phone, Menu, X } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const whatsappLink = "http://wa.me/5548998343320";
+  const whatsappLink = "https://fmshigienizacao.com.br/whatsapp";
 
   const navLinks = [
     { label: "Segmentos", href: "#segmentos" },

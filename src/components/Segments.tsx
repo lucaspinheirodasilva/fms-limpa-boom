@@ -1,11 +1,11 @@
 import { Button } from "@/components/ui/button";
-import { Building2, Hotel, HeartPulse, Home, Dumbbell, Users } from "lucide-react";
+import { Building2, Hotel, HeartPulse, Headphones, Dumbbell, Film } from "lucide-react";
 import officeImg from "@/assets/segment-office.jpg";
 import hotelImg from "@/assets/segment-hotel.jpg";
 import clinicImg from "@/assets/segment-clinic.jpg";
-import condominiumImg from "@/assets/segment-condominium.jpg";
+import callcenterImg from "@/assets/segment-callcenter.jpg";
 import gymImg from "@/assets/segment-gym.jpg";
-import churchImg from "@/assets/segment-church.jpg";
+import cinemaImg from "@/assets/segment-cinema.jpg";
 
 const segments = [
   {
@@ -39,13 +39,13 @@ const segments = [
     ]
   },
   {
-    icon: Home,
-    title: "Condomínios Residenciais",
-    image: condominiumImg,
+    icon: Headphones,
+    title: "Call Centers",
+    image: callcenterImg,
     benefits: [
-      "Halls de entrada e corredores",
-      "Salões de festas e áreas comuns",
-      "Planos de manutenção periódica"
+      "Grandes áreas com alto tráfego",
+      "Manutenção de ambiente saudável",
+      "Limpeza em horários flexíveis"
     ]
   },
   {
@@ -59,19 +59,19 @@ const segments = [
     ]
   },
   {
-    icon: Users,
-    title: "Igrejas e Espaços de Eventos",
-    image: churchImg,
+    icon: Film,
+    title: "Cinemas e Teatros",
+    image: cinemaImg,
     benefits: [
-      "Auditórios e salões acarpetados",
-      "Grandes áreas com alto tráfego",
-      "Limpeza pós-eventos"
+      "Carpetes vermelhos tradicionais",
+      "Grandes salas com alto tráfego",
+      "Limpeza pós-sessões e eventos"
     ]
   }
 ];
 
 const Segments = () => {
-  const whatsappLink = "http://wa.me/5548998343320";
+  const whatsappLink = "https://fmshigienizacao.com.br/whatsapp";
 
   return (
     <section id="segmentos" className="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-muted/30 to-background">

@@ -2,7 +2,7 @@ import { Phone, Mail, MapPin } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  const whatsappLink = "http://wa.me/5548998343320";
+  const whatsappLink = "https://fmshigienizacao.com.br/whatsapp";
 
   return (
     <footer className="bg-primary text-white py-8 sm:py-10 md:py-12">

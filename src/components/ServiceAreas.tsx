@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { MapPin, Building2, Hotel, HeartPulse, Home, Dumbbell, Users } from "lucide-react";
+import { MapPin, Building2, Hotel, HeartPulse, Headphones, Dumbbell, Film } from "lucide-react";
 
 const cities = [
   {
@@ -45,9 +45,9 @@ const serviceTypes = [
     description: "Produtos hipoalergênicos e ambiente livre de ácaros"
   },
   {
-    icon: Home,
-    title: "Condomínios Residenciais",
-    description: "Halls, corredores e salões de festas com planos de manutenção"
+    icon: Headphones,
+    title: "Call Centers",
+    description: "Grandes áreas com alto tráfego e manutenção de ambiente saudável"
   },
   {
     icon: Dumbbell,
@@ -55,14 +55,14 @@ const serviceTypes = [
     description: "Áreas de alongamento e yoga com higienização profunda"
   },
   {
-    icon: Users,
-    title: "Igrejas e Eventos",
-    description: "Auditórios e salões acarpetados com limpeza pós-eventos"
+    icon: Film,
+    title: "Cinemas e Teatros",
+    description: "Carpetes tradicionais e grandes salas com limpeza pós-eventos"
   }
 ];
 
 const ServiceAreas = () => {
-  const whatsappLink = "http://wa.me/5548998343320";
+  const whatsappLink = "https://fmshigienizacao.com.br/whatsapp";
 
   return (
     <section className="py-12 sm:py-16 md:py-20 bg-muted/50">
