@@ -8,24 +8,20 @@ import FAQ from "@/components/FAQ";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
-
 const Index = () => {
-  return (
-    <>
+  return <>
       <main className="min-h-screen">
         <Hero />
         <Segments />
         <Benefits />
-        <Process />
+        
         <ServiceAreas />
         <Testimonials />
-        <FAQ />
+        
         <CTA />
       </main>
       <Footer />
       <FloatingWhatsApp />
-    </>
-  );
+    </>;
 };
-
 export default Index;
