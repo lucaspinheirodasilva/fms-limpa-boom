@@ -39,7 +39,7 @@ const benefits = [
   {
     icon: Clock,
     title: "Flexibilidade de Horários",
-    description: "Atendimento 24/7 com agendamento em horários comerciais, noturnos ou finais de semana conforme sua necessidade"
+    description: "Horários flexíveis a combinar, com atendimento em horários comerciais, noturnos ou finais de semana conforme sua necessidade"
   }
 ];
 
