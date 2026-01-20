@@ -1,4 +1,3 @@
-import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Segments from "@/components/Segments";
 import Benefits from "@/components/Benefits";
@@ -13,7 +12,6 @@ import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 const Index = () => {
   return (
     <>
-      <Header />
       <main className="min-h-screen">
         <Hero />
         <Segments />
