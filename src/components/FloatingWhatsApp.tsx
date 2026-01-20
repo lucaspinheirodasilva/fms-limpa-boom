@@ -1,7 +1,7 @@
 import { Phone } from "lucide-react";
 
 const FloatingWhatsApp = () => {
-  const whatsappLink = "http://wa.me/5548998343320";
+  const whatsappLink = "https://fmshigienizacao.com.br/whatsapp";
 
   return (
     <a
