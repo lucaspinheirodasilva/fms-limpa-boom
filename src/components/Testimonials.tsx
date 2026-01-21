@@ -2,21 +2,39 @@ import { Star, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Roberto Silva",
-    company: "Diretor Administrativo - Grupo Empresarial SC",
-    content: "Contratamos a FMS para higienização dos carpetes de nossos escritórios e o resultado superou nossas expectativas. Profissionais extremamente competentes, pontualidade impecável e carpetes que ficaram como novos!",
+    name: "Lucas Pinheiro",
+    company: "Cliente Google Reviews",
+    content: "A melhor empresa de lavação de tapetes de Florianópolis!",
     rating: 5
   },
   {
-    name: "Juliana Mendes",
-    company: "Gerente de Facilities - Tech Solutions",
-    content: "Trabalho excepcional! A equipe da FMS demonstrou muito profissionalismo, utilizaram equipamentos de ponta e não deixaram nenhum resíduo. Nossos colaboradores notaram imediatamente a diferença na qualidade do ar.",
+    name: "Susanne Pickler Westphal",
+    company: "Cliente Google Reviews",
+    content: "O atendimento deles é excelente! Muito ágil e direto. Mandei meu tapete para lavar e eles buscaram e devolveram em casa! Tudo muito organizado, parabéns pelo atendimento nota 1000!",
     rating: 5
   },
   {
-    name: "Carlos Eduardo",
-    company: "Proprietário - Hotel Orla Mar",
-    content: "Após testar vários serviços de limpeza, finalmente encontramos um parceiro de confiança. A FMS Higienizações entende as necessidades do setor hoteleiro e entrega resultados consistentes. Recomendo sem hesitar!",
+    name: "Maria das Graças Moukarzel",
+    company: "Cliente Google Reviews",
+    content: "Trabalho perfeito, muito bem realizado. Gentileza, agilidade e competência desde o contato inicial até a finalização do atendimento. Parabéns para a equipe!",
+    rating: 5
+  },
+  {
+    name: "Juliana Rocha",
+    company: "Local Guide Google",
+    content: "Limpeza maravilhosa! Meu tapete nunca tinha sido lavado, estava bem suja. Eles conseguiram deixar com cara de novo! Ficou perfeito! Eles buscaram e entregaram super rápido!",
+    rating: 5
+  },
+  {
+    name: "Vanessa Domingues",
+    company: "Cliente Google Reviews",
+    content: "Meu tapete ficou impecável de limpo e muito cheiroso, atendimento maravilhoso! Fiquei muito feliz com o resultado, tapete ficou novo!",
+    rating: 5
+  },
+  {
+    name: "Karen Hinckel",
+    company: "Cliente Google Reviews",
+    content: "Maravilhosa, atendimento perfeito, tapetes limpos demais e cheirosos. Explicação, tudo que precisamos, sem pressa alguma, tiraram todas as dúvidas, e os tapetes ficaram como novos!",
     rating: 5
   }
 ];
@@ -35,7 +53,7 @@ const Testimonials = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {testimonials.map((testimonial, index) => (
             <div 
               key={index}
@@ -73,8 +91,8 @@ const Testimonials = () => {
               ))}
             </div>
             <div className="text-left">
-              <p className="font-bold text-foreground">Avaliação 5.0</p>
-              <p className="text-sm text-muted-foreground">Baseado em +150 avaliações</p>
+              <p className="font-bold text-foreground">Avaliação 5.0 no Google</p>
+              <p className="text-sm text-muted-foreground">Baseado em +30 avaliações verificadas</p>
             </div>
           </div>
         </div>
