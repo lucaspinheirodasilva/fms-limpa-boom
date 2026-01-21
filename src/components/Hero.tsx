@@ -41,12 +41,12 @@ para Empresas<span className="block text-accent mt-1 sm:mt-2">para Empresas</spa
             <span className="hidden sm:inline text-white/40">•</span>
             <span className="flex items-center gap-1.5 sm:gap-2">
               <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-accent flex-shrink-0" />
-              Call Centers
+              Cinemas e Teatros
             </span>
             <span className="hidden sm:inline text-white/40">•</span>
             <span className="flex items-center gap-1.5 sm:gap-2">
               <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-accent flex-shrink-0" />
-              Cinemas
+              Residenciais
             </span>
           </div>
           
