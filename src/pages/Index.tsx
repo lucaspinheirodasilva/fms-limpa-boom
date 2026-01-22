@@ -1,27 +1,25 @@
 import Hero from "@/components/Hero";
 import Segments from "@/components/Segments";
 import Benefits from "@/components/Benefits";
-import Process from "@/components/Process";
 import ServiceAreas from "@/components/ServiceAreas";
 import Testimonials from "@/components/Testimonials";
-import FAQ from "@/components/FAQ";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
-import FloatingWhatsApp from "@/components/FloatingWhatsApp";
+
 const Index = () => {
-  return <>
+  return (
+    <>
       <main className="min-h-screen">
         <Hero />
         <Segments />
         <Benefits />
-        
         <ServiceAreas />
         <Testimonials />
-        
         <CTA />
       </main>
       <Footer />
-      <FloatingWhatsApp />
-    </>;
+    </>
+  );
 };
+
 export default Index;
