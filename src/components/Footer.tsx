@@ -1,11 +1,8 @@
-import { Phone, Mail, MapPin } from "lucide-react";
-
+import { Phone, MapPin } from "lucide-react";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   const whatsappLink = "https://fmshigienizacao.com.br/whatsapp";
-
-  return (
-    <footer className="bg-primary text-white py-8 sm:py-10 md:py-12">
+  return <footer className="bg-primary text-white py-8 sm:py-10 md:py-12">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-6 sm:mb-8">
           <div className="text-center sm:text-left">
@@ -19,18 +16,13 @@ const Footer = () => {
           <div className="text-center sm:text-left">
             <h4 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">Contato</h4>
             <div className="space-y-2 sm:space-y-3">
-              <a 
-                href={whatsappLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center sm:justify-start gap-2 text-white/90 hover:text-white transition-colors text-sm sm:text-base"
-              >
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center sm:justify-start gap-2 text-white/90 hover:text-white transition-colors text-sm sm:text-base">
                 <Phone className="h-4 w-4 sm:h-5 sm:w-5" />
                 <span>(48) 99834-3320</span>
               </a>
               <div className="flex items-center justify-center sm:justify-start gap-2 text-white/90 text-sm sm:text-base">
-                <Mail className="h-4 w-4 sm:h-5 sm:w-5" />
-                <span className="break-all">contato@fmshigienizacoes.com.br</span>
+                
+                
               </div>
             </div>
           </div>
@@ -61,8 +53,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
