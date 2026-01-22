@@ -32,7 +32,7 @@ const faqs = [
   },
   {
     question: "Qual a área de cobertura dos serviços?",
-    answer: "Atendemos toda a Grande Florianópolis, incluindo Florianópolis, São José, Palhoça e Biguaçu, além de Balneário Camboriú, Itapema e região. Para outras localidades próximas, consulte-nos sobre disponibilidade de atendimento."
+    answer: "Atendemos toda a Grande Florianópolis, incluindo Florianópolis, São José, Palhoça e Biguaçu. Para outras localidades próximas, consulte-nos sobre disponibilidade de atendimento."
   },
   {
     question: "A limpeza profissional danifica ou desgasta o carpete?",

@@ -54,7 +54,7 @@ para Empresas<span className="block text-accent mt-1 sm:mt-2">para Empresas</spa
           <p className="mb-6 sm:mb-8 text-sm sm:text-base md:text-lg lg:text-xl text-white/95 leading-relaxed font-medium">
             <span className="hidden sm:inline">Tecnologia Industrial de Extração a Vapor | Secagem em 2-4h | Equipamentos Importados Kärcher & Windsor | </span>
             <span className="sm:hidden">Tecnologia Industrial | Secagem em 2-4h | </span>
-            Atendimento Grande Florianópolis, Balneário Camboriú e Itapema
+            Atendimento em Florianópolis, São José, Palhoça e Biguaçu
           </p>
           
           {/* CTAs */}

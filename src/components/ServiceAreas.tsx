@@ -18,14 +18,6 @@ const cities = [
     name: "Biguaçu",
     districts: ["Centro", "Fundos", "Tijuquinhas", "São Miguel", "Três Riachos"]
   },
-  {
-    name: "Balneário Camboriú",
-    districts: ["Centro", "Barra Sul", "Nações", "Estados", "Pioneiros", "dos Municípios"]
-  },
-  {
-    name: "Itapema",
-    districts: ["Centro", "Meia Praia", "Morretes", "Ilhota", "Perequê"]
-  }
 ];
 
 const serviceTypes = [
@@ -106,7 +98,7 @@ const ServiceAreas = () => {
               Regiões Atendidas
             </h2>
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto px-2">
-              Cobertura completa na Grande Florianópolis, Balneário Camboriú e Itapema
+              Cobertura completa na Grande Florianópolis
             </p>
           </div>
 

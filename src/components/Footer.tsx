@@ -40,10 +40,10 @@ const Footer = () => {
             <div className="flex items-start justify-center sm:justify-start gap-2 text-white/90">
               <MapPin className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0 mt-0.5" />
               <div className="text-sm sm:text-base">
-                <p className="mb-0.5 sm:mb-1">Grande Florianópolis</p>
-                <p className="mb-0.5 sm:mb-1">Balneário Camboriú</p>
-                <p className="mb-0.5 sm:mb-1">Itapema</p>
-                <p className="text-xs sm:text-sm">E região</p>
+                <p className="mb-0.5 sm:mb-1">Florianópolis</p>
+                <p className="mb-0.5 sm:mb-1">São José</p>
+                <p className="mb-0.5 sm:mb-1">Palhoça</p>
+                <p className="mb-0.5 sm:mb-1">Biguaçu</p>
               </div>
             </div>
           </div>
