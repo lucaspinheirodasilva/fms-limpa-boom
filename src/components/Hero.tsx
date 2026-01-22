@@ -83,7 +83,7 @@ para Empresas<span className="block text-accent mt-1 sm:mt-2">para Empresas</spa
               <div className="text-xs sm:text-sm md:text-base text-white/90 font-medium">Empresas Atendidas</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-accent mb-1 sm:mb-2">+50k</div>
+              <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-accent mb-1 sm:mb-2">+1.5mi</div>
               <div className="text-xs sm:text-sm md:text-base text-white/90 font-medium">m² Higienizados</div>
             </div>
             <div className="text-center">
