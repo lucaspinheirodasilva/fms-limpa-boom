@@ -10,7 +10,7 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/90 to-primary/75" />
       </div>
       
-      <div className="container relative z-10 mx-auto px-4 py-8 sm:py-12 md:py-20">
+      <div className="container relative z-10 mx-auto px-4 sm:py-12 md:py-20 py-0">
         <div className="max-w-4xl">
           {/* Badge de Credibilidade */}
           <div className="mb-4 sm:mb-6 inline-flex items-center gap-2 sm:gap-3 rounded-full bg-accent/20 backdrop-blur-sm border border-accent/30 px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm font-semibold text-white shadow-lg">
@@ -94,14 +94,8 @@ para Empresas<span className="block text-accent mt-1 sm:mt-2">para Empresas</spa
           
           {/* Badges Visuais de Diferenciais - Escondidos em mobile pequeno */}
           <div className="mt-6 sm:mt-10 hidden sm:flex flex-wrap gap-3 sm:gap-6 text-white">
-            <div className="flex items-center gap-2 sm:gap-3 bg-white/10 backdrop-blur-sm rounded-full px-4 sm:px-5 py-2 sm:py-3 border border-white/20">
-              <Shield className="h-5 w-5 sm:h-6 sm:w-6 text-accent" />
-              <span className="font-semibold text-sm sm:text-base">Equipamentos Industriais</span>
-            </div>
-            <div className="flex items-center gap-2 sm:gap-3 bg-white/10 backdrop-blur-sm rounded-full px-4 sm:px-5 py-2 sm:py-3 border border-white/20">
-              <Clock className="h-5 w-5 sm:h-6 sm:w-6 text-accent" />
-              <span className="font-semibold text-sm sm:text-base">Secagem Rápida 2-4h</span>
-            </div>
+            
+            
             
           </div>
         </div>
