@@ -1,9 +1,10 @@
 import { Button } from "@/components/ui/button";
-import { Building2, Hotel, Headphones, Film } from "lucide-react";
+import { Building2, Hotel, Headphones, Film, Drama } from "lucide-react";
 import officeImg from "@/assets/segment-office.jpg";
 import hotelImg from "@/assets/segment-hotel.jpg";
 import callcenterImg from "@/assets/segment-callcenter.jpg";
 import cinemaImg from "@/assets/segment-cinema.jpg";
+import theaterImg from "@/assets/segment-theater.jpg";
 
 const segments = [
   {
@@ -38,12 +39,22 @@ const segments = [
   },
   {
     icon: Film,
-    title: "Cinemas e Teatros",
+    title: "Cinemas",
     image: cinemaImg,
     benefits: [
       "Carpetes vermelhos tradicionais",
       "Grandes salas com alto tráfego",
-      "Limpeza pós-sessões e eventos"
+      "Limpeza pós-sessões"
+    ]
+  },
+  {
+    icon: Drama,
+    title: "Teatros",
+    image: theaterImg,
+    benefits: [
+      "Carpetes de auditório e palco",
+      "Limpeza pós-espetáculos",
+      "Preservação de tecidos nobres"
     ]
   }
 ];
