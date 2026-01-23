@@ -1,10 +1,8 @@
 import { Button } from "@/components/ui/button";
-import { Building2, Hotel, HeartPulse, Headphones, Dumbbell, Film } from "lucide-react";
+import { Building2, Hotel, Headphones, Film } from "lucide-react";
 import officeImg from "@/assets/segment-office.jpg";
 import hotelImg from "@/assets/segment-hotel.jpg";
-import clinicImg from "@/assets/segment-clinic.jpg";
 import callcenterImg from "@/assets/segment-callcenter.jpg";
-import gymImg from "@/assets/segment-gym.jpg";
 import cinemaImg from "@/assets/segment-cinema.jpg";
 
 const segments = [
@@ -29,16 +27,6 @@ const segments = [
     ]
   },
   {
-    icon: HeartPulse,
-    title: "Clínicas e Consultórios",
-    image: clinicImg,
-    benefits: [
-      "Produtos hipoalergênicos",
-      "Ambiente livre de ácaros e alérgenos",
-      "Conformidade com normas sanitárias"
-    ]
-  },
-  {
     icon: Headphones,
     title: "Call Centers",
     image: callcenterImg,
@@ -46,16 +34,6 @@ const segments = [
       "Grandes áreas com alto tráfego",
       "Manutenção de ambiente saudável",
       "Limpeza em horários flexíveis"
-    ]
-  },
-  {
-    icon: Dumbbell,
-    title: "Academias e Estúdios",
-    image: gymImg,
-    benefits: [
-      "Áreas de alongamento e yoga",
-      "Remoção de odores e suor",
-      "Higienização profunda"
     ]
   },
   {
