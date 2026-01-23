@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { MapPin, Building2, Hotel, HeartPulse, Headphones, Dumbbell, Film } from "lucide-react";
+import { MapPin, Building2, Hotel, Headphones, Film, Drama } from "lucide-react";
 
 const cities = [
   {
@@ -32,24 +32,19 @@ const serviceTypes = [
     description: "Padrão premium de limpeza com produtos hipoalergênicos"
   },
   {
-    icon: HeartPulse,
-    title: "Clínicas e Consultórios",
-    description: "Produtos hipoalergênicos e ambiente livre de ácaros"
-  },
-  {
     icon: Headphones,
     title: "Call Centers",
     description: "Grandes áreas com alto tráfego e manutenção de ambiente saudável"
   },
   {
-    icon: Dumbbell,
-    title: "Academias e Estúdios",
-    description: "Áreas de alongamento e yoga com higienização profunda"
+    icon: Film,
+    title: "Cinemas",
+    description: "Grandes salas com carpetes vermelhos e limpeza pós-sessões"
   },
   {
-    icon: Film,
-    title: "Cinemas e Teatros",
-    description: "Carpetes tradicionais e grandes salas com limpeza pós-eventos"
+    icon: Drama,
+    title: "Teatros",
+    description: "Carpetes de auditório com limpeza pós-espetáculos e eventos"
   }
 ];
 
