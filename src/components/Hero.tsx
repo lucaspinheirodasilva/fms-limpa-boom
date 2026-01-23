@@ -17,14 +17,12 @@ const Hero = () => {
             <Award className="h-4 w-4 sm:h-5 sm:w-5 text-accent flex-shrink-0" />
             <span>
               <span className="sm:hidden">15+ Anos | 500+ Empresas</span>
-              <span className="hidden sm:inline">15+ Anos de Experiência | 500+ Empresas Atendidas | Resultados Garantidos</span>
+              <span className="hidden sm:inline">27+ Anos de Experiência | 3000+ Empresas Atendidas | Resultados Garantidos</span>
             </span>
           </div>
           
           {/* Headline Principal */}
-          <h1 className="mb-3 sm:mb-4 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight">Higienização Profissional 
-de Carpetes
-para Empresas<span className="block text-accent mt-1 sm:mt-2">para Empresas</span>
+          <h1 className="mb-3 sm:mb-4 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight">Higienização Profissional  de Carpetes para Empresas<span className="block text-accent mt-1 sm:mt-2">para Empresas</span>
           </h1>
           
           {/* Segmentos Atendidos - Grid em mobile */}
