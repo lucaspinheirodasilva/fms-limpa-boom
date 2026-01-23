@@ -1,4 +1,4 @@
-import { Shield, Clock, Award, Droplets, Leaf, BadgeCheck, Wrench, Zap } from "lucide-react";
+import { Clock, Award, Droplets, Leaf, Wrench, Zap } from "lucide-react";
 
 const benefits = [
   {
@@ -12,11 +12,6 @@ const benefits = [
     description: "Tecnologia de extração que permite secagem completa em 2-4 horas, sem paralisar suas operações"
   },
   {
-    icon: BadgeCheck,
-    title: "Certificações e Compliance",
-    description: "Produtos e processos certificados, atendendo normas ANVISA, ISO e requisitos corporativos de qualidade"
-  },
-  {
     icon: Droplets,
     title: "Higienização Profunda e Sanitização",
     description: "Eliminação de 99.9% de ácaros, bactérias e fungos, garantindo ambiente mais saudável para colaboradores e clientes"
@@ -25,11 +20,6 @@ const benefits = [
     icon: Leaf,
     title: "Produtos Ecológicos Certificados",
     description: "Utilizamos produtos biodegradáveis, não tóxicos e seguros para pessoas, animais e meio ambiente"
-  },
-  {
-    icon: Shield,
-    title: "Garantia Total e Pós-Venda",
-    description: "Compromisso com o resultado: se não ficar satisfeito, voltamos gratuitamente até atingir a excelência esperada"
   },
   {
     icon: Award,
