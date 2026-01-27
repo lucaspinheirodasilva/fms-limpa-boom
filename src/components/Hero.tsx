@@ -22,9 +22,7 @@ const Hero = () => {
           </div>
           
           {/* Headline Principal */}
-          <h1 className="mb-3 sm:mb-4 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight">
-            Higienização Profissional de Carpetes
-            <span className="block text-accent mt-1 sm:mt-2">para Empresas</span>
+          <h1 className="mb-3 sm:mb-4 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight">Higienização Profissional de Carpetes para Empresas<span className="block text-accent mt-1 sm:mt-2">para Empresas</span>
           </h1>
           
           {/* Segmentos Atendidos - Grid em mobile */}
