@@ -22,7 +22,9 @@ const Hero = () => {
           </div>
           
           {/* Headline Principal */}
-          <h1 className="mb-3 sm:mb-4 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight">Higienização Profissional  de Carpetes para Empresas<span className="block text-accent mt-1 sm:mt-2">para Empresas</span>
+          <h1 className="mb-3 sm:mb-4 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight">
+            Higienização Profissional de Carpetes
+            <span className="block text-accent mt-1 sm:mt-2">para Empresas</span>
           </h1>
           
           {/* Segmentos Atendidos - Grid em mobile */}
@@ -42,7 +44,7 @@ const Hero = () => {
               Cinemas e Teatros
             </span>
             <span className="hidden sm:inline text-white/40">•</span>
-          <span className="flex items-center gap-1.5 sm:gap-2">
+            <span className="flex items-center gap-1.5 sm:gap-2">
               <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-accent flex-shrink-0" />
               Auditórios
             </span>
