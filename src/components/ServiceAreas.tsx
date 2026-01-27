@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { MapPin, Building2, Hotel, Headphones, Film, Drama } from "lucide-react";
+import { MapPin, Building2, Hotel, Headphones, Film, Drama, Presentation } from "lucide-react";
 
 const cities = [
   {
@@ -45,6 +45,11 @@ const serviceTypes = [
     icon: Drama,
     title: "Teatros",
     description: "Carpetes de auditório com limpeza pós-espetáculos e eventos"
+  },
+  {
+    icon: Presentation,
+    title: "Auditórios",
+    description: "Espaços corporativos e institucionais com limpeza para eventos"
   }
 ];
 

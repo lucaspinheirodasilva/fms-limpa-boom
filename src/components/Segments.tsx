@@ -1,10 +1,11 @@
 import { Button } from "@/components/ui/button";
-import { Building2, Hotel, Headphones, Film, Drama } from "lucide-react";
+import { Building2, Hotel, Headphones, Film, Drama, Presentation } from "lucide-react";
 import officeImg from "@/assets/segment-office.jpg";
 import hotelImg from "@/assets/segment-hotel.jpg";
 import callcenterImg from "@/assets/segment-callcenter.jpg";
 import cinemaImg from "@/assets/segment-cinema.jpg";
 import theaterImg from "@/assets/segment-theater.jpg";
+import auditoriumImg from "@/assets/segment-auditorium.jpg";
 
 const segments = [
   {
@@ -55,6 +56,16 @@ const segments = [
       "Carpetes de auditório e palco",
       "Limpeza pós-espetáculos",
       "Preservação de tecidos nobres"
+    ]
+  },
+  {
+    icon: Presentation,
+    title: "Auditórios",
+    image: auditoriumImg,
+    benefits: [
+      "Espaços corporativos e institucionais",
+      "Limpeza para eventos e convenções",
+      "Manutenção de carpetes de alto padrão"
     ]
   }
 ];
