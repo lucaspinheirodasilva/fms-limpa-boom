@@ -1,58 +1,117 @@
-import { Phone, MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Phone, MapPin, Mail } from "lucide-react";
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   const whatsappLink = "https://fmshigienizacao.com.br/whatsapp";
-  return <footer className="bg-primary text-white py-8 sm:py-10 md:py-12">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-6 sm:mb-8">
-          <div className="text-center sm:text-left">
-            <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">FMS Higienizações</h3>
-            <p className="text-white/90 leading-relaxed text-sm sm:text-base">
-              Especialistas em limpeza e higienização profissional de carpetes para empresas. 
-              Qualidade, confiança e resultados garantidos.
+
+  const services = [
+    { label: "Higienização de Estofados", href: "/higienizacao-de-estofados" },
+    { label: "Lavagem de Tapetes", href: "/lavagem-de-tapetes" },
+    { label: "Limpeza de Carpetes", href: "/limpeza-de-carpetes" },
+    { label: "Higienização de Colchões", href: "/higienizacao-de-colchoes" },
+  ];
+
+  const cities = [
+    "Florianópolis",
+    "São José",
+    "Palhoça",
+    "Biguaçu"
+  ];
+
+  return (
+    <footer className="bg-primary text-white">
+      {/* Main Footer */}
+      <div className="container mx-auto px-4 py-10 sm:py-12 md:py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10">
+          {/* Sobre */}
+          <div>
+            <div className="flex items-center gap-2 mb-4">
+              <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center">
+                <span className="text-accent-foreground font-bold text-lg">F</span>
+              </div>
+              <div>
+                <span className="text-xl font-bold text-white">FMS</span>
+                <span className="text-xl font-bold text-accent ml-1">Higienizações</span>
+              </div>
+            </div>
+            <p className="text-white/80 leading-relaxed text-sm sm:text-base mb-4">
+              Especialistas em Limpeza de Estofados e Tapetes na Grande Florianópolis. 
+              Oferecemos higienização profissional de sofás, tapetes, carpetes e colchões, 
+              removendo manchas, ácaros e odores.
             </p>
           </div>
 
-          <div className="text-center sm:text-left">
-            <h4 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">Contato</h4>
-            <div className="space-y-2 sm:space-y-3">
-              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center sm:justify-start gap-2 text-white/90 hover:text-white transition-colors text-sm sm:text-base">
-                <Phone className="h-4 w-4 sm:h-5 sm:w-5" />
-                <span>(48) 99834-3320</span>
+          {/* Serviços */}
+          <div>
+            <h4 className="text-lg font-bold mb-4">Serviços</h4>
+            <ul className="space-y-2">
+              {services.map((service) => (
+                <li key={service.href}>
+                  <Link 
+                    to={service.href}
+                    className="text-white/80 hover:text-accent transition-colors text-sm sm:text-base"
+                  >
+                    {service.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Contato */}
+          <div>
+            <h4 className="text-lg font-bold mb-4">Nossos Contatos</h4>
+            <div className="space-y-3">
+              <p className="font-semibold text-white">FMS Higienizações</p>
+              <a 
+                href={whatsappLink} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="flex items-center gap-2 text-white/80 hover:text-accent transition-colors text-sm sm:text-base"
+              >
+                <Phone className="h-4 w-4 flex-shrink-0" />
+                <span>(48) 98805-7404</span>
               </a>
-              <div className="flex items-center justify-center sm:justify-start gap-2 text-white/90 text-sm sm:text-base">
-                
-                
+              <div className="flex items-start gap-2 text-white/80 text-sm sm:text-base">
+                <MapPin className="h-4 w-4 flex-shrink-0 mt-1" />
+                <span>R. Mal. Rondon, 930 - Barreiros, São José - SC, 88117-030</span>
               </div>
             </div>
           </div>
 
-          <div className="text-center sm:text-left sm:col-span-2 md:col-span-1">
-            <h4 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">Áreas de Atendimento</h4>
-            <div className="flex items-start justify-center sm:justify-start gap-2 text-white/90">
-              <MapPin className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0 mt-0.5" />
+          {/* Áreas de Atendimento */}
+          <div>
+            <h4 className="text-lg font-bold mb-4">Áreas de Atendimento</h4>
+            <div className="flex items-start gap-2 text-white/80">
+              <MapPin className="h-4 w-4 flex-shrink-0 mt-1" />
               <div className="text-sm sm:text-base">
-                <p className="mb-0.5 sm:mb-1">Florianópolis</p>
-                <p className="mb-0.5 sm:mb-1">São José</p>
-                <p className="mb-0.5 sm:mb-1">Palhoça</p>
-                <p className="mb-0.5 sm:mb-1">Biguaçu</p>
+                {cities.map((city, index) => (
+                  <p key={city} className="mb-1">{city}</p>
+                ))}
+                <p className="text-accent font-medium mt-2">e toda a região!</p>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <div className="border-t border-white/20 pt-6 sm:pt-8">
-          <div className="flex flex-col items-center gap-3 sm:gap-4 md:flex-row md:justify-between">
-            <p className="text-white/80 text-xs sm:text-sm text-center md:text-left">
+      {/* Bottom Footer */}
+      <div className="border-t border-white/20">
+        <div className="container mx-auto px-4 py-4 sm:py-6">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+            <p className="text-white/70 text-xs sm:text-sm">
               © {currentYear} FMS Higienizações. Todos os direitos reservados.
             </p>
-            <div className="flex gap-4 sm:gap-6 text-xs sm:text-sm text-white/80">
+            <div className="flex gap-4 sm:gap-6 text-xs sm:text-sm text-white/70">
               <a href="#" className="hover:text-white transition-colors">Política de Privacidade</a>
               <a href="#" className="hover:text-white transition-colors">Termos de Serviço</a>
             </div>
           </div>
         </div>
       </div>
-    </footer>;
+    </footer>
+  );
 };
+
 export default Footer;
