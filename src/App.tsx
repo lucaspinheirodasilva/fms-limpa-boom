@@ -8,6 +8,7 @@ import LavagemTapetes from "./pages/LavagemTapetes";
 import HigienizacaoEstofados from "./pages/HigienizacaoEstofados";
 import LimpezaCarpetes from "./pages/LimpezaCarpetes";
 import HigienizacaoColchoes from "./pages/HigienizacaoColchoes";
+import WhatsApp from "./pages/WhatsApp";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
