@@ -41,7 +41,7 @@ const services = [
 ];
 
 const HomeServices = () => {
-  const whatsappLink = "https://fmshigienizacao.com.br/whatsapp";
+  const whatsappLink = "/whatsapp";
 
   return (
     <section id="servicos" className="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-muted/30 to-background">

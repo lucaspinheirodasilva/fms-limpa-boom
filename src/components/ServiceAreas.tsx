@@ -54,7 +54,7 @@ const serviceTypes = [
 ];
 
 const ServiceAreas = () => {
-  const whatsappLink = "https://fmshigienizacao.com.br/whatsapp";
+  const whatsappLink = "/whatsapp";
 
   return (
     <section className="py-12 sm:py-16 md:py-20 bg-muted/50">

@@ -3,7 +3,7 @@ import { CheckCircle2 } from "lucide-react";
 import processImg from "@/assets/process-cleaning.jpg";
 
 const AboutSection = () => {
-  const whatsappLink = "https://fmshigienizacao.com.br/whatsapp";
+  const whatsappLink = "/whatsapp";
 
   const services = [
     {

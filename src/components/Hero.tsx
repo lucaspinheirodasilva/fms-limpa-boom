@@ -3,7 +3,7 @@ import { CheckCircle2, Award } from "lucide-react";
 import heroImage from "@/assets/hero-carpet-cleaning.jpg";
 
 const Hero = () => {
-  const whatsappLink = "https://fmshigienizacao.com.br/whatsapp";
+  const whatsappLink = "/whatsapp";
   
   return (
     <section className="relative min-h-[90vh] sm:min-h-[95vh] flex items-center overflow-hidden pt-16 sm:pt-20">

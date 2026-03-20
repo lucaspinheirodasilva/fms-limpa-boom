@@ -3,7 +3,7 @@ import { Phone, MapPin, Mail } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  const whatsappLink = "https://fmshigienizacao.com.br/whatsapp";
+  const whatsappLink = "/whatsapp";
 
   const services = [
     { label: "Higienização de Estofados", href: "/higienizacao-de-estofados" },

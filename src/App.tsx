@@ -8,6 +8,7 @@ import LavagemTapetes from "./pages/LavagemTapetes";
 import HigienizacaoEstofados from "./pages/HigienizacaoEstofados";
 import LimpezaCarpetes from "./pages/LimpezaCarpetes";
 import HigienizacaoColchoes from "./pages/HigienizacaoColchoes";
+import WhatsApp from "./pages/WhatsApp";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/higienizacao-de-estofados" element={<HigienizacaoEstofados />} />
           <Route path="/limpeza-de-carpetes" element={<LimpezaCarpetes />} />
           <Route path="/higienizacao-de-colchoes" element={<HigienizacaoColchoes />} />
+          <Route path="/whatsapp" element={<WhatsApp />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
