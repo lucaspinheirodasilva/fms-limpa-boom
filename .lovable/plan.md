@@ -1,92 +1,68 @@
 
-## Plano: Adicionar Auditórios ao Site
 
-Adicionar "Auditórios" em três locais do site, com imagem estilo parlamento político para o card de Segmentos.
+## Plano: Melhorar Página de Lavagem de Tapetes
 
----
-
-### 1. Hero (src/components/Hero.tsx)
-
-**Adicionar "Auditórios" na lista de segmentos (linha 29-48):**
-
-Inserir novo item após "Cinemas e Teatros":
-```jsx
-<span className="hidden sm:inline text-white/40">•</span>
-<span className="flex items-center gap-1.5 sm:gap-2">
-  <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-accent flex-shrink-0" />
-  Auditórios
-</span>
-```
+Comparando o site original com a implementação atual, faltam estas seções/melhorias:
 
 ---
 
-### 2. Segmentos Atendidos (src/components/Segments.tsx)
+### O que falta / pode melhorar
 
-**Gerar nova imagem:**
-- Criar `src/assets/segment-auditorium.jpg` com visual de parlamento/auditório político
-- Estilo: salão amplo com poltronas dispostas em semicírculo, carpete elegante, ambiente institucional
-
-**Adicionar import:**
-```javascript
-import { Presentation } from "lucide-react"; // ícone de apresentação/auditório
-import auditoriumImg from "@/assets/segment-auditorium.jpg";
-```
-
-**Adicionar novo card ao array `segments` (após Teatros):**
-```javascript
-{
-  icon: Presentation,
-  title: "Auditórios",
-  image: auditoriumImg,
-  benefits: [
-    "Espaços corporativos e institucionais",
-    "Limpeza para eventos e convenções",
-    "Manutenção de carpetes de alto padrão"
-  ]
-}
-```
+| Seção | Original | Atual |
+|-------|----------|-------|
+| Cards de serviço com imagens | Cada card tem imagem ao lado | Apenas texto simples |
+| Detalhes por bairro no "Quem Somos" | Lista bairros específicos por cidade | Genérico |
+| Seção "Para mais informações" | Imagem + CTA WhatsApp | Não existe |
+| Vídeo YouTube | Embed de vídeo de impermeabilização | Não existe |
+| Serviços detalhados com bairros | Cada serviço lista bairros atendidos | Apenas descrição genérica |
 
 ---
 
-### 3. Soluções Completas de Higienização (src/components/ServiceAreas.tsx)
+### Alterações em `src/pages/LavagemTapetes.tsx`
 
-**Adicionar import:**
-```javascript
-import { Presentation } from "lucide-react";
-```
+**1. Cards de serviço com imagens (lado a lado)**
+- Gerar 4 imagens para os serviços (lavanderia, coleta domicílio, pets, higienização completa)
+- Layout alternado: imagem à esquerda/direita em cada card
+- Adicionar botão "Veja mais" linkando para páginas internas relevantes
 
-**Adicionar novo item ao array `serviceTypes` (após Teatros):**
-```javascript
-{
-  icon: Presentation,
-  title: "Auditórios",
-  description: "Espaços corporativos e institucionais com limpeza para eventos"
-}
-```
+**2. Expandir seção "Quem Somos" com bairros**
+- Adicionar texto sobre bairros atendidos por cidade:
+  - Florianópolis: Trindade, Estreito, Coqueiros, Santa Mônica, Abraão, Capoeiras
+  - São José: Kobrasol, Campinas, Barreiros, Jardim Atlântico, Areias
+  - Palhoça e Biguaçu
+- Detalhar cada serviço (Estofados, Tapetes/Carpetes, Colchões, Comercial) com bairros específicos
+- Adicionar imagem de tapete limpo ao lado do texto
+
+**3. Nova seção "Para mais informações"**
+- Bloco com imagem + texto convidando a falar pelo WhatsApp
+- CTA "Fale Conosco Agora!"
+
+**4. Nova seção de Vídeo**
+- Título: "Veja a FMS Higienizações em Ação"
+- Subtítulo com cobertura regional
+- Embed do YouTube Shorts (impermeabilização de estofados)
+
+**5. Mais benefícios**
+- Expandir de 4 para 6 benefícios (adicionar "Produtos Ecológicos" e "Profissionais Treinados")
 
 ---
 
-### 4. Resumo das Alterações
+### Arquivos afetados
 
 | Arquivo | Alteração |
 |---------|-----------|
-| `src/components/Hero.tsx` | Adicionar "Auditórios" à lista de segmentos |
-| `src/components/Segments.tsx` | Novo card com imagem + ícone + benefícios |
-| `src/components/ServiceAreas.tsx` | Novo item na lista de soluções |
-| `src/assets/segment-auditorium.jpg` | Nova imagem estilo parlamento político |
+| `src/pages/LavagemTapetes.tsx` | Reescrever com todas as seções acima |
+| `src/assets/` | Gerar 4 imagens para cards de serviço + 1 imagem tapete limpo |
 
----
+### Ordem das seções na página final
 
-### 5. Detalhes Técnicos
+1. Hero (manter atual)
+2. Serviços com imagens alternadas
+3. Benefícios expandidos (6 itens)
+4. Quem Somos detalhado com bairros + imagem
+5. Para mais informações (CTA)
+6. CTABanner (manter)
+7. Vídeo YouTube
+8. Depoimentos (manter)
+9. Footer
 
-**Ícone escolhido:** `Presentation` do lucide-react (representa apresentações/auditórios)
-
-**Imagem a ser gerada:** Auditório estilo parlamento com:
-- Poltronas em semicírculo
-- Carpete vermelho ou azul escuro
-- Ambiente amplo e institucional
-- Iluminação profissional
-
-**Grid resultante:**
-- Segmentos Atendidos: 6 cards (layout 3x2 em desktop)
-- Soluções Completas: 6 itens (layout 3x2 em desktop)
