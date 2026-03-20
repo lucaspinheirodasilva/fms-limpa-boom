@@ -9,7 +9,7 @@ const CTABanner = ({
   title = "Limpeza de Estofados e Lavagem de Tapetes na Grande Florianópolis",
   subtitle = "com rapidez, segurança e garantia de qualidade!"
 }: CTABannerProps) => {
-  const whatsappLink = "https://fmshigienizacao.com.br/whatsapp";
+  const whatsappLink = "/whatsapp";
 
   return (
     <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-r from-primary to-primary/90">

@@ -3,7 +3,7 @@ import { Award, Sofa, Sparkles, Home } from "lucide-react";
 import heroImage from "@/assets/hero-home.jpg";
 
 const HomeHero = () => {
-  const whatsappLink = "https://fmshigienizacao.com.br/whatsapp";
+  const whatsappLink = "/whatsapp";
   
   return (
     <section className="relative min-h-[90vh] sm:min-h-[95vh] flex items-center overflow-hidden pt-16 sm:pt-20">

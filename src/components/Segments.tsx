@@ -71,7 +71,7 @@ const segments = [
 ];
 
 const Segments = () => {
-  const whatsappLink = "https://fmshigienizacao.com.br/whatsapp";
+  const whatsappLink = "/whatsapp";
 
   return (
     <section id="segmentos" className="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-muted/30 to-background">

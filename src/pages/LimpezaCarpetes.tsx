@@ -11,7 +11,7 @@ import theaterImg from "@/assets/segment-theater.jpg";
 import auditoriumImg from "@/assets/segment-auditorium.jpg";
 
 const LimpezaCarpetes = () => {
-  const whatsappLink = "https://fmshigienizacao.com.br/whatsapp";
+  const whatsappLink = "/whatsapp";
 
   const segments = [
     {

@@ -18,7 +18,7 @@ const WhatsAppIcon = ({ className }: { className?: string }) => (
 );
 
 const LavagemTapetes = () => {
-  const whatsappLink = "https://fmshigienizacao.com.br/whatsapp";
+  const whatsappLink = "/whatsapp";
 
   const services = [
     {

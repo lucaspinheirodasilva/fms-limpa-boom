@@ -7,7 +7,7 @@ import CTABanner from "@/components/CTABanner";
 import HomeTestimonials from "@/components/HomeTestimonials";
 
 const HigienizacaoColchoes = () => {
-  const whatsappLink = "https://fmshigienizacao.com.br/whatsapp";
+  const whatsappLink = "/whatsapp";
 
   const services = [
     {

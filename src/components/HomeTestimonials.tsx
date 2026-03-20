@@ -53,7 +53,7 @@ const testimonials = [
 ];
 
 const HomeTestimonials = () => {
-  const whatsappLink = "https://fmshigienizacao.com.br/whatsapp";
+  const whatsappLink = "/whatsapp";
 
   return (
     <section id="depoimentos" className="py-12 sm:py-16 md:py-20 bg-muted/30">
