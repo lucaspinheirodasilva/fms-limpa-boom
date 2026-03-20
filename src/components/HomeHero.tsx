@@ -1,66 +1,98 @@
 import { Button } from "@/components/ui/button";
-import { Award, ArrowRight } from "lucide-react";
+import { Award, Sofa, Sparkles, Home } from "lucide-react";
 import heroImage from "@/assets/hero-home.jpg";
-import WhatsAppIcon from "./WhatsAppIcon";
 
 const HomeHero = () => {
   const whatsappLink = "https://fmshigienizacao.com.br/whatsapp";
-
+  
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background image with refined overlay */}
-      <div className="absolute inset-0">
-        <img src={heroImage} alt="" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[hsl(215,50%,8%)] via-[hsl(215,50%,10%)/0.97] to-[hsl(215,50%,14%)/0.80]" />
+    <section className="relative min-h-[90vh] sm:min-h-[95vh] flex items-center overflow-hidden pt-16 sm:pt-20">
+      <div className="absolute inset-0 bg-cover bg-center" style={{
+        backgroundImage: `url(${heroImage})`
+      }}>
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/90 to-primary/70" />
       </div>
-
-      <div className="container relative z-10 mx-auto px-4 py-24 sm:py-32 md:py-40">
-        <div className="max-w-2xl">
-          {/* Subtle trust badge */}
-          <div className="mb-8 inline-flex items-center gap-2 text-white/60 text-xs tracking-[0.15em] uppercase font-medium">
-            <Award className="h-3.5 w-3.5 text-accent" />
-            Desde 1999 · Grande Florianópolis
+      
+      <div className="container relative z-10 mx-auto px-4 sm:py-12 md:py-20 py-0">
+        <div className="max-w-4xl">
+          {/* Badge de Credibilidade */}
+          <div className="mb-4 sm:mb-6 inline-flex items-center gap-2 sm:gap-3 rounded-full bg-accent/20 backdrop-blur-sm border border-accent/30 px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm font-semibold text-white shadow-lg">
+            <Award className="h-4 w-4 sm:h-5 sm:w-5 text-accent flex-shrink-0" />
+            <span>
+              <span className="sm:hidden">Desde 1999 | Grande Florianópolis</span>
+              <span className="hidden sm:inline">Desde 1999 | Especialistas na Grande Florianópolis | Resultados Garantidos</span>
+            </span>
           </div>
-
-          {/* Clean, impactful headline */}
-          <h1 className="mb-6 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-[1.05] tracking-tight">
-            Higienização
-            <br />
-            <span className="text-accent">Profissional</span>
+          
+          {/* Headline Principal */}
+          <h1 className="mb-3 sm:mb-4 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight">
+            Higienização de Estofados e Lavagem de Tapetes <span className="text-accent">em Florianópolis</span>
           </h1>
-
-          <p className="mb-10 text-base sm:text-lg text-white/60 leading-relaxed max-w-lg font-light">
-            Estofados, carpetes, tapetes e colchões. Qualidade e eficiência em
-            Florianópolis, São José, Palhoça e Biguaçu.
+          
+          {/* Subheadline */}
+          <p className="mb-4 sm:mb-6 text-base sm:text-lg md:text-xl lg:text-2xl text-white/95 leading-relaxed font-medium">
+            Lavagem e higienização de estofados, carpetes e tapetes com qualidade e eficiência. Nossa equipe especializada oferece serviços rápidos e confiáveis.
           </p>
-
+          
+          {/* Serviços em Grid */}
+          <div className="mb-6 sm:mb-8 grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
+            <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-lg px-3 py-2 sm:px-4 sm:py-3">
+              <Sofa className="h-4 w-4 sm:h-5 sm:w-5 text-accent flex-shrink-0" />
+              <span className="text-white text-xs sm:text-sm font-medium">Estofados</span>
+            </div>
+            <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-lg px-3 py-2 sm:px-4 sm:py-3">
+              <Sparkles className="h-4 w-4 sm:h-5 sm:w-5 text-accent flex-shrink-0" />
+              <span className="text-white text-xs sm:text-sm font-medium">Tapetes</span>
+            </div>
+            <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-lg px-3 py-2 sm:px-4 sm:py-3">
+              <Home className="h-4 w-4 sm:h-5 sm:w-5 text-accent flex-shrink-0" />
+              <span className="text-white text-xs sm:text-sm font-medium">Carpetes</span>
+            </div>
+            <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-lg px-3 py-2 sm:px-4 sm:py-3">
+              <Sparkles className="h-4 w-4 sm:h-5 sm:w-5 text-accent flex-shrink-0" />
+              <span className="text-white text-xs sm:text-sm font-medium">Colchões</span>
+            </div>
+          </div>
+          
+          {/* Localização */}
+          <p className="mb-6 sm:mb-8 text-sm sm:text-base md:text-lg text-white/90">
+            Atendimento em <strong>Florianópolis, São José, Palhoça, Biguaçu</strong> e região.
+          </p>
+          
           {/* CTAs */}
-          <div className="flex flex-col sm:flex-row gap-3 mb-20 sm:mb-24">
-            <Button size="lg" variant="accent" onClick={() => window.open(whatsappLink, '_blank')}
-              className="text-sm px-8 py-6 font-semibold tracking-wide">
-              <WhatsAppIcon className="mr-2 h-5 w-5" />
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-8 sm:mb-12">
+            <Button size="lg" variant="accent" onClick={() => window.open(whatsappLink, '_blank')} className="text-base sm:text-lg px-6 py-5 sm:px-10 sm:py-7 font-bold transition-all duration-300 hover:scale-105 shadow-xl">
+              <svg className="mr-2 h-5 w-5 sm:h-6 sm:w-6" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
               Solicitar Orçamento
             </Button>
-            <Button size="lg" variant="hero-outline" onClick={() => document.getElementById('servicos')?.scrollIntoView({ behavior: 'smooth' })}
-              className="text-sm px-8 py-6 font-medium tracking-wide group">
+            
+            <Button size="lg" variant="hero-outline" onClick={() => document.getElementById('servicos')?.scrollIntoView({
+              behavior: 'smooth'
+            })} className="text-base sm:text-lg px-6 py-5 sm:px-10 sm:py-7 font-semibold">
               Conheça Nossos Serviços
-              <ArrowRight className="h-4 w-4 ml-1 group-hover:translate-x-0.5 transition-transform" />
             </Button>
           </div>
-
-          {/* Stats — minimal, elegant */}
-          <div className="flex flex-wrap gap-x-10 gap-y-4 pt-8 border-t border-white/10">
-            {[
-              { value: "+25", label: "Anos" },
-              { value: "3.000+", label: "Clientes" },
-              { value: "1.5mi", label: "m² Limpos" },
-              { value: "98%", label: "Satisfação" },
-            ].map((stat) => (
-              <div key={stat.label}>
-                <div className="text-xl sm:text-2xl font-bold text-white tracking-tight">{stat.value}</div>
-                <div className="text-[11px] text-white/40 uppercase tracking-widest font-medium mt-0.5">{stat.label}</div>
-              </div>
-            ))}
+          
+          {/* Estatísticas */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 pt-6 sm:pt-8 border-t border-white/20">
+            <div className="text-center">
+              <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-accent mb-1 sm:mb-2">+25</div>
+              <div className="text-xs sm:text-sm md:text-base text-white/90 font-medium">Anos de Experiência</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-accent mb-1 sm:mb-2">+3.000</div>
+              <div className="text-xs sm:text-sm md:text-base text-white/90 font-medium">Clientes Atendidos</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-accent mb-1 sm:mb-2">+1.5mi</div>
+              <div className="text-xs sm:text-sm md:text-base text-white/90 font-medium">m² Higienizados</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-accent mb-1 sm:mb-2">98%</div>
+              <div className="text-xs sm:text-sm md:text-base text-white/90 font-medium">Satisfação</div>
+            </div>
           </div>
         </div>
       </div>
