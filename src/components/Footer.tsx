@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Phone, MapPin, Mail } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -26,14 +27,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10">
           {/* Sobre */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center">
-                <span className="text-accent-foreground font-bold text-lg">F</span>
-              </div>
-              <div>
-                <span className="text-xl font-bold text-white">FMS</span>
-                <span className="text-xl font-bold text-accent ml-1">Higienizações</span>
-              </div>
+            <div className="mb-4">
+              <img src={logo} alt="FMS Higienizações" className="h-12 w-auto brightness-0 invert" />
             </div>
             <p className="text-white/80 leading-relaxed text-sm sm:text-base mb-4">
               Especialistas em Limpeza de Estofados e Tapetes na Grande Florianópolis. 
