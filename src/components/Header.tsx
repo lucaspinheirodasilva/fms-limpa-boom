@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,14 +34,8 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg sm:text-xl">F</span>
-            </div>
-            <div>
-              <span className="text-lg sm:text-xl font-bold text-primary">FMS</span>
-              <span className="text-lg sm:text-xl font-bold text-accent ml-1">Higienizações</span>
-            </div>
+          <Link to="/" className="flex items-center">
+            <img src={logo} alt="FMS Higienizações" className="h-10 sm:h-12 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
