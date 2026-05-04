@@ -8,6 +8,7 @@ import coletaImg from "@/assets/tapete-coleta.jpg";
 import petsImg from "@/assets/tapete-pets.jpg";
 import higienizacaoImg from "@/assets/tapete-higienizacao.jpg";
 import tapeteLimpoImg from "@/assets/tapete-limpo.jpg";
+import fmsVanImg from "@/assets/fms-van.webp";
 import CTABanner from "@/components/CTABanner";
 import HomeTestimonials from "@/components/HomeTestimonials";
 
@@ -283,8 +284,8 @@ const LavagemTapetes = () => {
 
               <div className="w-full lg:w-1/2 space-y-6">
                 <img 
-                  src={tapeteLimpoImg} 
-                  alt="Tapete limpo e higienizado pela FMS Higienizações" 
+                  src={fmsVanImg} 
+                  alt="Veículo da FMS Higienizações para coleta e entrega de tapetes" 
                   className="w-full rounded-xl shadow-lg"
                   loading="lazy"
                 />
@@ -314,8 +315,8 @@ const LavagemTapetes = () => {
             <div className="flex flex-col md:flex-row gap-0 items-stretch bg-card rounded-2xl border border-border overflow-hidden shadow-lg">
               <div className="w-full md:w-5/12 h-64 md:h-auto">
                 <img 
-                  src={tapeteLimpoImg} 
-                  alt="Tapete limpo - FMS Higienizações" 
+                  src={fmsVanImg} 
+                  alt="Veículo FMS Higienizações - coleta e entrega" 
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
